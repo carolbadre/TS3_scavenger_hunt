@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scavenger Hunt</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Scavenger Hunt</h1>
+        
+        <!-- User Name Input -->
+        <div id="name-section">
+            <label for="name">Enter your name:</label>
+            <input type="text" id="name" placeholder="Your Name">
+            <button id="start-btn">Start Hunt</button>
+        </div>
+
+        <!-- Questions Section -->
+        <div id="questions-section" style="display: none;">
+            <div class="question" id="question-1">
+                <p>1. [Your first question here]</p>
+                <input type="text" class="answer" placeholder="Your answer">
+            </div>
+            <!-- Repeat this block for questions 2 to 10 -->
+            <div class="question" id="question-10">
+                <p>10. [Your tenth question here]</p>
+                <input type="text" class="answer" placeholder="Your answer">
+            </div>
+
+            <!-- Submit button -->
+            <button id="submit-btn">Submit Answers</button>
+            <p id="result" class="hidden"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
